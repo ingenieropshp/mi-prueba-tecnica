@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "next-build": "next build",
-    "build": "npx @opennextjs/cloudflare build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "npx @opennextjs/cloudflare deploy"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "build:cf": "opennextjs-cloudflare",
+  "start": "next start",
+  "lint": "next lint",
+  "deploy": "npm run build:cf && wrangler pages deploy .open-next"
+},
   "dependencies": {
     "firebase": "^12.11.0",
     "next": "16.2.2",
