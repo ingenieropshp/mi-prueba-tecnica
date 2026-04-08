@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-  "next-build": "next build",
-  "build": "npx @opennextjs/cloudflare build",
-  "start": "next start",
-  "lint": "next lint",
-  "deploy": "npx @opennextjs/cloudflare deploy"
+    "next-build": "next build",
+    "build": "npx @opennextjs/cloudflare build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "npx @opennextjs/cloudflare deploy"
   },
   "dependencies": {
     "firebase": "^12.11.0",
@@ -17,6 +17,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.18.1",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
