@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { collection, addDoc, onSnapshot, query, where, deleteDoc, doc } from 'firebase/firestore';
-import { db } from '../../lib/firebase';
-import { useAuth } from '../../hooks/useAuth';
+import { db } from '../lib/firebase';
+import { useAuth } from '../hooks/useAuth';
 
 export default function Home() {
   const { user, login, logout } = useAuth();
